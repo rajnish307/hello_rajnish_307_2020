@@ -11,7 +11,7 @@ setup(
     package_dir={'': 'src'},
     author="Rajnish",
     author_email="rajnishkumar307@gmail.com",
-    url="https://github.com/rajnish307/hello_world",
+    url="https://github.com/rajnish307/hello_rajnish_307_2020",
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
