@@ -1,5 +1,12 @@
+LICENSE.txt
+MANIFEST.in
 README.md
+hello_rajnish_307_2020.py
 setup.py
+test_hello_rajnish_307_2020.py
+__pycache__/test_hello_rajnish_307_2020.cpython-37-pytest-5.2.1.pyc
+dist/hello_rajnish_307_2020-0.0.1-py3-none-any.whl
+dist/hello_rajnish_307_2020-0.0.1.tar.gz
 src/hello_rajnish_307_2020.py
 src/hello_rajnish_307_2020.egg-info/PKG-INFO
 src/hello_rajnish_307_2020.egg-info/SOURCES.txt
