@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  font-size : 0.9rem;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.passs{
+color : green;
+font-size : 18px;
+}
+
+.expect{
+color : blue;
+font-size : 18px;
+}
+
+.fail{
+color : red;
+font-size : 18px;
+}
+
+.graph{
+float: right;
+}
+
+.heading{
+text-align : center
+}
+
+.test{
+overflow-x:auto;
+}
+
+.comments{
+float : right;
+padding-right : 100px
+}
+
+.summary{
+<!--padding-left : 50px;-->
+}
+
+th {
+  height: 20px;
+}
+
+.message{
+    font-weight : bold;
+{
+
+</style>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <h1 class="heading">Report for {{table_name}} Table Validation</h1>
+    <div class="graph" id="piechart"></div>
+    <div class="summary">
+        <h2>Rows Summary</h2>
+        <div class="">No. of Rows in {{source}} = {{row_in_source}} </div><br>
+        <div class="">No. of Rows in {{destination}} = {{row_in_dest}} </div><br>
+        <div class="passs">No. of Rows Matched in {{source}} and {{destination}}= {{row_in_source_match}} </div><br>
+        <div class="fail">No. of Rows Mismatched in {{source}} and {{destination}}= {{row_in_source_mismatch}} </div><br>
+        <h2>Columns Summary</h2>
+        <div class="">No. of Columns in {{source}} = {{col_in_source}} </div><br>
+        <div class="">No. of Columns in {{destination}} = {{col_in_dest}} </div><br>
+        <div class="passs">No. of Columns Matched in {{source}} and {{destination}} = {{col_in_dest_match}} </div><br>
+        <div class="fail">No. of Columns Mismatched in {{source}} and {{destination}} = {{col_in_dest_mismatch}} </div><br>
+    </div>
+    <div>
+        <h2>Execution Stats</h2>
+        <div class="">Time taken to read data from {{source}}= {{time_taken_source}} (H:MM:SS)</div><br>
+        <div class="">Time taken to read data from {{destination}}= {{time_taken_dest}} (H:MM:SS)</div><br>
+        <div class="">Time taken to compare= {{compare_time}} (H:MM:SS)</div><br>
+        <div class="">Total Time taken= {{total_time}} (H:MM:SS)</div><br>
+        <div class="">Number of Data Compared = {{data_points_count}}</div><br>
+        <div class="">Peak Value of Memory Utilized during Execution = {{total_memory_used}} GB</div><br>
+        <div class="expect">Expected Number of Comparision Per Hour = {{per_hour_comparision}}</div><br>
+    </div>
+    <div>
+        <h2>System Specification</h2>
+        <div class="">Name of Machine = {{name_of_machine}}</div><br>
+        <div class="">Total Memory = {{total_memory}} GB</div><br>
+        <div class="">Number of Cores = {{no_of_cores}}</div><br>
+    </div>
+    <div class="message">**Please find the attached Report document if there is any mismatch</div>
+</body>
+</html>

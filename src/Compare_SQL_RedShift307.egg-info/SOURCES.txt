@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+test_hello_rajnish_307_2020.py
+__pycache__/test_hello_rajnish_307_2020.cpython-37-pytest-5.2.1.pyc
+dist/Compare_SQL_RedShift307-0.1.1-py3-none-any.whl
+src/Compare_SQL_RedShift.py
+src/DaskUtil.py
+src/MasterClass.py
+src/Compare_SQL_RedShift307.egg-info/PKG-INFO
+src/Compare_SQL_RedShift307.egg-info/SOURCES.txt
+src/Compare_SQL_RedShift307.egg-info/dependency_links.txt
+src/Compare_SQL_RedShift307.egg-info/requires.txt
+src/Compare_SQL_RedShift307.egg-info/top_level.txt

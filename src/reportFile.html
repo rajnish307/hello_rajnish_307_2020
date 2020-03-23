@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <title>HTML Pandas Dataframe with CSS</title>
+    <style>
+      table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  font-size : 0.7rem;
+<!--  resize : both;-->
+<!--  overflow : auto;-->
+<!--  padding: 1px;-->
+}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.test{
+overflow-x:auto;
+}
+    </style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <body>
+   <div>
+       <h2>Mismatches in Table : ILMASTAccount2_2010</h2>
+        <h2>Data only in SQL but not in RedShift</h2>
+        <div class="test">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ilmastaccount2key</th>
+      <th>ildw_term</th>
+      <th>ildw_unearn_term</th>
+      <th>ildw_ntd_10_29</th>
+      <th>ildw_ntd_30_59</th>
+      <th>ildw_ntd_60_89</th>
+      <th>ildw_partial_pay_amt</th>
+      <th>ildw_m_last_tran_amt</th>
+      <th>ildw_no_extns</th>
+      <th>ildw_bill_day</th>
+      <th>ildw_cur_78_factor</th>
+      <th>ildw_nxt_78_factor</th>
+      <th>ildw_m_ytd_int_pd_prior</th>
+      <th>ildw_m_assd_lchrgs</th>
+      <th>ildw_m_ytd_lchrgs</th>
+      <th>ildw_unpaid_lchrgs_amt</th>
+      <th>ildw_paid_lchrgs</th>
+      <th>ildw_m_misc_fees_assd</th>
+      <th>ildw_m_misc_fees_pd</th>
+      <th>ildw_m_misc_fees_unpd</th>
+      <th>ildw_no_mos_run</th>
+      <th>ildw_m_no_mos_run_ytd</th>
+      <th>ildw_m_no_nsf</th>
+      <th>ildw_m_assd_oth_chrg</th>
+      <th>ildw_paid_oth_chrg</th>
+      <th>ildw_unpaid_oth_chrg</th>
+      <th>ildw_m_over_pymnt</th>
+      <th>ildw_ps28_no_pmt_1</th>
+      <th>ildw_ps28_sched_2</th>
+      <th>ildw_ps28_no_pmt_2</th>
+      <th>ildw_ps28_amt_2</th>
+      <th>ildw_no_pmt1</th>
+      <th>ildw_m_cur_unearn_bk</th>
+      <th>ildw_int_earned_ltd</th>
+      <th>ildw_m_uf_num72_1</th>
+      <th>ildw_key</th>
+      <th>ildw_mat_dte</th>
+      <th>ildw_chg_off_cd</th>
+      <th>ildw_late_chg_code</th>
+      <th>ildw_hold_code</th>
+      <th>ildw_clos</th>
+      <th>ildw_m_last_tran</th>
+      <th>ildw_est_mat_date</th>
+      <th>ildw_m_misc_code2</th>
+      <th>ildw_m_misc_status</th>
+      <th>ildw_notice</th>
+      <th>ildw_ps28_strt_dt_1</th>
+      <th>ildw_polk_model_yr</th>
+      <th>ildw_polk_make</th>
+      <th>ildw_polk_model</th>
+      <th>ildw_m_cs_application_score</th>
+      <th>ildw_m_uf_alpha1_2</th>
+      <th>ildw_m_uf_alpha4_2</th>
+      <th>ildw_m_cs_override_code</th>
+      <th>ildw_m_cs_cutoff_score</th>
+      <th>ildw_m_user_remarks</th>
+      <th>ildw_m_cs_bypass_code</th>
+      <th>ildw_m_accounting_unit</th>
+      <th>ildw_m_acb_charge_off_amt</th>
+      <th>ildw_m_acb_close_pd_days</th>
+      <th>ildw_na_cons_info_ind</th>
+      <th>ildw_co_na_cons_info_ind</th>
+      <th>ildw_m_acb_high_balance</th>
+      <th>ildw_m_payoff_trans</th>
+      <th>ildw_m_uf_num7_2</th>
+      <th>scdstartdate</th>
+      <th>scdenddate</th>
+      <th>islatest</th>
+      <th>firstinserted</th>
+      <th>lastupdated</th>
+      <th>insertetlid</th>
+      <th>updateetlid</th>
+      <th>etllogid</th>
+      <th>ildw_m_tick_a_cd</th>
+      <th>ildw_m_clctn_off</th>
+      <th>ildw_m_uf_alpha1_4</th>
+      <th>ildw_m_uf_alpha1_5</th>
+      <th>ildw_m_uf_alpha1_6</th>
+      <th>ildw_m_uf_alpha1_9</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+        </div>
+        <h2>Data only in RedShift but not in SQL</h2>
+        <div class="test">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ilmastaccount2key</th>
+      <th>ildw_term</th>
+      <th>ildw_unearn_term</th>
+      <th>ildw_ntd_10_29</th>
+      <th>ildw_ntd_30_59</th>
+      <th>ildw_ntd_60_89</th>
+      <th>ildw_partial_pay_amt</th>
+      <th>ildw_m_last_tran_amt</th>
+      <th>ildw_no_extns</th>
+      <th>ildw_bill_day</th>
+      <th>ildw_cur_78_factor</th>
+      <th>ildw_nxt_78_factor</th>
+      <th>ildw_m_ytd_int_pd_prior</th>
+      <th>ildw_m_assd_lchrgs</th>
+      <th>ildw_m_ytd_lchrgs</th>
+      <th>ildw_unpaid_lchrgs_amt</th>
+      <th>ildw_paid_lchrgs</th>
+      <th>ildw_m_misc_fees_assd</th>
+      <th>ildw_m_misc_fees_pd</th>
+      <th>ildw_m_misc_fees_unpd</th>
+      <th>ildw_no_mos_run</th>
+      <th>ildw_m_no_mos_run_ytd</th>
+      <th>ildw_m_no_nsf</th>
+      <th>ildw_m_assd_oth_chrg</th>
+      <th>ildw_paid_oth_chrg</th>
+      <th>ildw_unpaid_oth_chrg</th>
+      <th>ildw_m_over_pymnt</th>
+      <th>ildw_ps28_no_pmt_1</th>
+      <th>ildw_ps28_sched_2</th>
+      <th>ildw_ps28_no_pmt_2</th>
+      <th>ildw_ps28_amt_2</th>
+      <th>ildw_no_pmt1</th>
+      <th>ildw_m_cur_unearn_bk</th>
+      <th>ildw_int_earned_ltd</th>
+      <th>ildw_m_uf_num72_1</th>
+      <th>ildw_key</th>
+      <th>ildw_mat_dte</th>
+      <th>ildw_chg_off_cd</th>
+      <th>ildw_late_chg_code</th>
+      <th>ildw_hold_code</th>
+      <th>ildw_clos</th>
+      <th>ildw_m_last_tran</th>
+      <th>ildw_est_mat_date</th>
+      <th>ildw_m_misc_code2</th>
+      <th>ildw_m_misc_status</th>
+      <th>ildw_notice</th>
+      <th>ildw_ps28_strt_dt_1</th>
+      <th>ildw_polk_model_yr</th>
+      <th>ildw_polk_make</th>
+      <th>ildw_polk_model</th>
+      <th>ildw_m_cs_application_score</th>
+      <th>ildw_m_uf_alpha1_2</th>
+      <th>ildw_m_uf_alpha4_2</th>
+      <th>ildw_m_cs_override_code</th>
+      <th>ildw_m_cs_cutoff_score</th>
+      <th>ildw_m_user_remarks</th>
+      <th>ildw_m_cs_bypass_code</th>
+      <th>ildw_m_accounting_unit</th>
+      <th>ildw_m_acb_charge_off_amt</th>
+      <th>ildw_m_acb_close_pd_days</th>
+      <th>ildw_na_cons_info_ind</th>
+      <th>ildw_co_na_cons_info_ind</th>
+      <th>ildw_m_acb_high_balance</th>
+      <th>ildw_m_payoff_trans</th>
+      <th>ildw_m_uf_num7_2</th>
+      <th>scdstartdate</th>
+      <th>scdenddate</th>
+      <th>islatest</th>
+      <th>firstinserted</th>
+      <th>lastupdated</th>
+      <th>insertetlid</th>
+      <th>updateetlid</th>
+      <th>etllogid</th>
+      <th>ildw_m_tick_a_cd</th>
+      <th>ildw_m_clctn_off</th>
+      <th>ildw_m_uf_alpha1_4</th>
+      <th>ildw_m_uf_alpha1_5</th>
+      <th>ildw_m_uf_alpha1_6</th>
+      <th>ildw_m_uf_alpha1_9</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+        </div>
+    </div>
+  </body>
+</html>.

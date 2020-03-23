@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='hello_rajnish_307_2020',
-    version='0.0.1',
+    name='Compare_SQL_RedShift307',
+    version='0.1.1',
     description='Say Hello....',
-    py_modules=["hello_rajnish_307_2020"],
+    py_modules=["Compare_SQL_RedShift", "DaskUtil", "MasterClass"],
     package_dir={'': 'src'},
     author="Rajnish",
     author_email="rajnishkumar307@gmail.com",
-    url="https://github.com/rajnish307/hello_rajnish_307_2020",
+    url="https://github.com/rajnish307/Test_upload_with_multipl-e_files",
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
