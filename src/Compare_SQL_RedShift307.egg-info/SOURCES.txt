@@ -5,6 +5,7 @@ setup.py
 test_hello_rajnish_307_2020.py
 __pycache__/test_hello_rajnish_307_2020.cpython-37-pytest-5.2.1.pyc
 dist/Compare_SQL_RedShift307-0.1.1-py3-none-any.whl
+dist/Compare_SQL_RedShift307-0.1.1.tar.gz
 src/Compare_SQL_RedShift.py
 src/DaskUtil.py
 src/MasterClass.py
