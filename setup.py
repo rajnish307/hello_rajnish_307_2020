@@ -5,12 +5,13 @@ with open("README.md", "r") as fh:
 
 setup(
     name='Compare_SQL_RedShift307',
-    version='0.1.1',
+    version='0.1.2',
     description='Say Hello....',
     py_modules=["Compare_SQL_RedShift", "DaskUtil", "MasterClass"],
     package_dir={'': 'src'},
     author="Rajnish",
     author_email="rajnishkumar307@gmail.com",
+    include_package_data=True,
     url="https://github.com/rajnish307/Test_upload_with_multipl-e_files",
     classifiers=[
         "Programming Language :: Python :: 3",
