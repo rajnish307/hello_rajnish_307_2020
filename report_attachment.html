@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>HTML Pandas Dataframe with CSS</title>
+    <style>
+      table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  font-size : 0.7rem;
+<!--  resize : both;-->
+<!--  overflow : auto;-->
+<!--  padding: 1px;-->
+}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.test{
+overflow-x:auto;
+}
+    </style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <body>
+   <div>
+       <h2>Mismatches in Table : {{table_name}}</h2>
+        <h2>Data only in {{source}} but not in {{destination}}</h2>
+        <div class="test">
+        {{ df1_mismatch }}
+        </div>
+        <h2>Data only in {{destination}} but not in {{source}}</h2>
+        <div class="test">
+        {{ df2_mismatch }}
+        </div>
+    </div>
+  </body>
+</html>.
